@@ -5,9 +5,8 @@ const Actors = () => {
   return (
     <div>
       <h1>Actors Page</h1>
-      <div>
       		{actors.map((a, index) => (
-      			<div key={index}>
+      			<div key={index} className="actor">
       			<h1>Name: {a.name}</h1>
       			<h3>Movies</h3>
       			<ul>
@@ -17,7 +16,6 @@ const Actors = () => {
       			</ul>
       			</div>
       			))}
-      	</div>
     </div>
   );
 };
